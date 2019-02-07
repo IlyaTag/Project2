@@ -1,13 +1,14 @@
 import { element } from './element';
-import { add } from './add';
+
 function yMap() {
+
     // eslint-disable-next-line no-undef
     ymaps.ready(function() {
         // eslint-disable-next-line no-undef
         var myMap = new ymaps.Map('map', {
             center: [47.214142, 38.920946],
             zoom: 14,
-            controls: ['zoomControl'], //влияет на объединение в кластер - расстояние между объектами
+            controls: ['zoomControl'],
             behaviors: ['default', 'scrollZoom']
         }, { searchControlProvider: 'yandex#search' });
 

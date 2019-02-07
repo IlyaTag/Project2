@@ -43,6 +43,17 @@ if (!html.length || !files['.hbs'].find(file => file.name === 'index')) {
         chunks: ['index']
     }));
 }
+/* console.log("files-start");
+console.log(files);
+console.log("files-end");
+console.log("entries-start");
+console.log(entries);
+console.log("entries-end");
+
+console.log("html-start");
+console.log(html);
+console.log("html-end"); */
+
 
 module.exports = {
     entry: entries,
@@ -51,7 +62,6 @@ module.exports = {
         path: path.resolve('dist')
     },
     mode: 'development',
-    // devtool: 'source-map',
     module: {
         rules: [
             ...rules,

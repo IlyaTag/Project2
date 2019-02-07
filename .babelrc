@@ -1,16 +1,16 @@
 {
-  "presets": [
-    [
-      "@babel/env",
-      {
-        "modules": false,
-        "targets": {
-          "ie": "11"
-        }
-      }
+    "presets": [
+        [
+            "@babel/env",
+            {
+                "modules": false,
+                "targets": {
+                    "ie": "10"
+                }
+            }
+        ]
+    ],
+    "plugins": [
+        "@babel/transform-runtime"
     ]
-  ],
-  "plugins": [
-    "@babel/transform-runtime"
-  ]
 }
