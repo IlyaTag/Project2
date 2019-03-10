@@ -26,7 +26,7 @@ function yMap() {
         // eslint-disable-next-line no-undef
         var clusterer = new ymaps.Clusterer({
                 preset: 'islands#invertedVioletClusterIcons',
-                //gridSize: 64,
+                // gridSize: 128,
                 clusterBalloonContentLayout: 'cluster#balloonCarousel',
                 clusterBalloonContentHeader: 'geoObject.properties.balloonContentHeader',
                 clusterBalloonPagerSize: 5,

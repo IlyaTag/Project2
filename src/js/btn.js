@@ -27,6 +27,7 @@ function btn(coords, i, clusterer, myMap, myPlace, objList) {
         } else {
             myPlace = createPlacemark(coords);
             
+            // eslint-disable-next-line max-len
             date = date.getFullYear() +'.'+ date.toLocaleString('ru', { month: 'numeric', day: 'numeric' }) + ' ' + date.toLocaleString('ru', time);
             clusterer.add(myPlace);
             // eslint-disable-next-line no-undef
