@@ -1,4 +1,6 @@
-import { window } from './window';
+import {
+    window
+} from './window';
 
 function createPlacemark(coords) {
     // eslint-disable-next-line no-undef
@@ -26,9 +28,12 @@ function btn(coords, i, clusterer, myMap, myPlace, objList) {
             alert('Остались не заполненные поля!!!');
         } else {
             myPlace = createPlacemark(coords);
-            
+
             // eslint-disable-next-line max-len
-            date = date.getFullYear() +'.'+ date.toLocaleString('ru', { month: 'numeric', day: 'numeric' }) + ' ' + date.toLocaleString('ru', time);
+            date = date.getFullYear() + '.' + date.toLocaleString('ru', {
+                month: 'numeric',
+                day: 'numeric'
+            }) + ' ' + date.toLocaleString('ru', time);
             clusterer.add(myPlace);
             // eslint-disable-next-line no-undef
             myMap.geoObjects.add(clusterer);
@@ -36,7 +41,7 @@ function btn(coords, i, clusterer, myMap, myPlace, objList) {
             document.querySelector('.input-name').value = '';
             document.querySelector('.input-place').value = '';
             document.querySelector('.input-commit').value = '';
-            window(coords, name, place, commit, date, myPlace, i, objList);           
+            window(coords, name, place, commit, date, myPlace, i, objList);
         }
     })
 

@@ -16,7 +16,7 @@ function add(e, coords, objList, target, myMap, clusterer, div, i, myPlace) {
             ul.appendChild(li);
         }
     } else {
-        const balloon = document.querySelector('.ymaps-2-1-73-balloon__layout');
+        const balloon = document.querySelector('.ymaps-2-1-74-balloon__layout');
 
         balloon.addEventListener('click', (e) => {
             if (e.target.className === 'ballon_links') {
